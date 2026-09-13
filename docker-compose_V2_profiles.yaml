@@ -1,0 +1,49 @@
+services:
+
+    postgres:
+        image: postgres:17
+        container_name: postgres
+
+        environment:
+            POSTGRES_DB: springboot_lab
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+
+        ports:
+            - "5432:5432"
+
+        volumes:
+            - postgres-data:/var/lib/postgresql/data
+
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U postgres -d springboot_lab"]
+            interval: 5s
+            timeout: 5s
+            retries: 5
+            start_period: 10s
+    app:
+        build: .
+        container_name: springboot-lab
+
+        depends_on:
+            postgres:
+                 condition: service_healthy
+
+        environment:
+            DB_HOST: postgres
+            DB_PORT: 5432dockp
+            DB_NAME: springboot_lab
+            DB_USER: postgres
+            DB_PASSWORD: postgres
+
+        ports:
+            - "8080:8080"
+    
+    debug:
+        image: busybox:1.36
+        profiles:
+            - tools
+
+volumes:
+    postgres-data:
+
