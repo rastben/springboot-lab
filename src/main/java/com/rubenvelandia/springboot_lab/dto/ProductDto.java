@@ -1,8 +1,12 @@
 package com.rubenvelandia.springboot_lab.dto;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class ProductDto {
 
     private Long id;
+
+    @NotBlank
     private String name;
     private Double price;
 
