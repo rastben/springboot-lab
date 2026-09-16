@@ -1,7 +1,7 @@
 # Spring Boot Lab - Git Professional 
 spring:
   application:
-    name: springboot-lab
+    name: springboot-lab-feature
 
 # Database configuration is provided through environment variables.
   datasource:
