@@ -1,6 +1,7 @@
 package com.rubenvelandia.springboot_lab.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Positive;
 
 public class ProductDto {
 
@@ -8,6 +9,8 @@ public class ProductDto {
 
     @NotBlank
     private String name;
+
+    @Positive
     private Double price;
 
     public ProductDto() {
