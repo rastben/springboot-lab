@@ -10,3 +10,7 @@ Laboratorio de aprendizaje de arquitectura moderna y DevOps.
 ## Product Stock
 
 Product stock management.
+
+## Release
+
+Version 1.2.0
