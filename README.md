@@ -18,3 +18,7 @@ Version 1.2.0
 ## Hotfix
 
 Critical production bug fixed.
+
+## Product Description
+
+Product description management.
