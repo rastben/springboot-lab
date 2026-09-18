@@ -7,3 +7,6 @@ Laboratorio de aprendizaje de arquitectura moderna y DevOps.
 - Product name validation
 - Product price validation
 
+## Product Stock
+
+Product stock management.
