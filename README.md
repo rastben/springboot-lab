@@ -14,3 +14,7 @@ Product stock management.
 ## Release
 
 Version 1.2.0
+
+## Hotfix
+
+Critical production bug fixed.
