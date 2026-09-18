@@ -22,3 +22,7 @@ Critical production bug fixed.
 ## Product Description
 
 Product description management.
+
+## Development
+
+This project is used for architecture and DevOps training.
