@@ -18,3 +18,11 @@ Version 1.2.0
 ## Hotfix
 
 Critical production bug fixed.
+
+## Product Description
+
+Product description management.
+
+## Development
+
+This project is used for architecture and DevOps training.
