@@ -26,3 +26,7 @@ Product description management.
 ## Development
 
 This project is used for architecture and DevOps training.
+
+## GitHub Professional
+
+This project uses GitHub branch protection to require pull requests for changes to develop.
