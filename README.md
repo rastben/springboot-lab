@@ -30,3 +30,7 @@ This project is used for architecture and DevOps training.
 ## GitHub Professional
 
 This project uses GitHub branch protection to require pull requests for changes to develop.
+
+## Documentation
+
+See [GitHub Professional](docs/github-professional.md) for the repository's GitHub configuration and project management setup.
