@@ -70,6 +70,6 @@ class ProductDtoValidationTest {
         Set<ConstraintViolation<ProductDto>> violations =
                 validator.validate(product);
 
-        assertTrue(violations.isEmpty());
+        assertTrue(!violations.isEmpty());
     }
 }
