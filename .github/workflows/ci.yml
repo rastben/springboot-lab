@@ -25,3 +25,6 @@ jobs:
 
             - name: Run test
               run: ./mvnw test
+
+            - name: Intentional failure - lab
+              run: exit 1
