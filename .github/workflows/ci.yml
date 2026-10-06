@@ -27,4 +27,4 @@ jobs:
               run: ./mvnw -B test
 
             - name: Build application
-              run: ./mvnw -B package -Dskiptests
+              run: ./mvnw -B package -DskipTests
