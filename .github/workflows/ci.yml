@@ -45,6 +45,6 @@ jobs:
                 context: .
                 file: ./Dockerfile
                 push: ${{ github.event_name == 'push' && github.ref == 'refs/heads/develop' }}
-                tags:
+                tags: |
                   ${{ vars.DOCKERHUB_USERNAME }}/springboot-lab:develop
                   ${{ vars.DOCKERHUB_USERNAME }}/springboot-lab:${{ github.sha }}
