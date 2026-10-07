@@ -32,17 +32,10 @@ jobs:
             - name: Set up Docker Buildx
               uses: docker/setup-buildx-action@v4
 
-            - name: Login to Docker Hub
-              if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
-              uses: docker/login-action@v4
-              with:
-                username: ${{ vars.DOCKERHUB_USERNAME }}
-                passsword: ${{ vars.DOCKERHUB_TOKEN }}
-
             - name: Build Docker image
               uses: docker/build-push-action@v7
               with:
                 context: .
                 file: ./Dockerfile
-                push: ${{ github.event_name == 'push' && github.ref == 'refs/heads/develop' }}
-                tags: rastben/springboot-lab:develop
+                push: false
+                tags: springboot-lab:ci
